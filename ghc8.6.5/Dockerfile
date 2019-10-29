@@ -16,3 +16,4 @@ RUN sed -i "s/lts-[0-9][0-9].[0-9][0-9]/lts-14.12/" install/shake.yaml
 RUN echo "allow-newer: true" >> /root/.stack/config.yaml
 
 RUN stack ./install.hs hie-8.6.5
+RUN stack ./install.hs build-data

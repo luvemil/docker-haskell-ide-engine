@@ -15,5 +15,5 @@ RUN sed -i "s/lts-[0-9][0-9].[0-9][0-9]/lts-12.26/" install/shake.yaml
 # Some reason shake is older version or something...
 RUN echo "allow-newer: true" >> /root/.stack/config.yaml
 
-RUN stack ./install.hs help
 RUN stack ./install.hs hie-8.4.4
+RUN stack ./install.hs build-data
